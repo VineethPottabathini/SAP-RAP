@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "A Fiori application",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Shopping Cart App"
+  },
+  "ui5AppDetails": {
+    "appId": "zvpshopcart_229"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_078184A0D5F88C7399B8A5CAC2F7C7D802D2F1DB_TM",
+    "semanticObject": "ZVPSHOPCART_229",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_078184A0D5F88C7399B8A5CAC2F7C7D802D2F1DB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Shopping Cart App"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_VPSHOPCART_229'
+@MappingRole: true
+define role ZR_VPSHOPCART_229 {
+  grant select on ZR_VPSHOPCART_229
+  where TRUE;
+}

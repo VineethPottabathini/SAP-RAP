@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_VPSHOPCART_229'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_VPSHOPCART_229'
+  }
+}
+define service ZUI_VPSHOPCART_229_O4 provider contracts odata_v4_ui {
+  expose ZC_VPSHOPCART_229 as ShoppingCart;
+}
