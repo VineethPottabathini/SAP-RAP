@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_VPUPDEXL_229000'
+@MappingRole: true
+define role ZC_VPUPDEXL_229000 {
+  grant select on ZC_VPUPDEXL_229000
+  where INHERITING CONDITIONS FROM ENTITY ZR_VPUPDEXL_229000 REPLACING { ROOT WITH _BaseEntity };
+}

@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZVPUPDEXL_229",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZVPUPDEXL_229",
+  "sapObjectType": "ZVPUPDEXL_229",
+  "rootNode": true
+}

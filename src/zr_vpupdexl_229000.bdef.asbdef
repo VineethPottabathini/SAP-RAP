@@ -1,0 +1,54 @@
+managed implementation in class ZBP_R_VPUPDEXL_229 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_VPUPDEXL_229000 alias UploadExcelData
+persistent table ZVP_UPDEXL_229
+extensible
+draft table ZVPUPDEXL_229_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   OrderID;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   OrderID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  static action ExcelUpload deep parameter ZAB_UPLOADEXCEL_229;
+
+  mapping for ZVP_UPDEXL_229 corresponding extensible
+  {
+    OrderID = ORDER_ID;
+    OrderedItem = ORDERED_ITEM;
+    OrderQuantity = ORDER_QUANTITY;
+    RequestedDeliveryDate = REQUESTED_DELIVERY_DATE;
+    TotalPrice = TOTAL_PRICE;
+    Currency = CURRENCY;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}

@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_VPUPDEXL_229000'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_VPUPDEXL_229000'
+  }
+}
+define service ZUI_VPUPDEXL_229000_O4 provider contracts odata_v4_ui {
+  expose ZC_VPUPDEXL_229000 as UploadExcelData;
+}
